@@ -33,7 +33,7 @@ buz_lat = 53.02
 buz_lon = 158.39
 
 ul_dif_lat = coordinates[0] - buz_lat
-ul_dif_lon = coordinates[1] - buz_lon
+ul_dif_lon = abs(coordinates[1] - buz_lon)
 print(ul_dif_lat, ul_dif_lon)
 
 pixel_lat = ul_dif_lat / density_y
