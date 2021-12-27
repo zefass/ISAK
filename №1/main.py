@@ -13,7 +13,7 @@ for line in lines:
     line = line.strip()
     if line[0:21] in corners:
         coordinates.append(float(line[24:]))
-#print(coordinates)
+
 array_coord = np.array([coordinates[0::2], coordinates[1::2]])
 print(array_coord)
 
@@ -22,8 +22,8 @@ delta_y = abs(coordinates[0] - coordinates[4])
 delta_x = abs(coordinates[1] - coordinates[3])
 print(delta_x, delta_y)
 
-x = 4035
-y = 4035
+x = 8151
+y = 7501
 
 density_x = delta_x/x
 density_y = delta_y/y
